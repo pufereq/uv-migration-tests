@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- [`cc2e052`](https://github.com/pufereq/template-repo/commit/cc2e05270f2691ba462c82a75c93f3f693511247) **__init__.py**: add a function
+
+## [0.1.0] - 2025-07-14
+
+### Features
+
 - [`9778c74`](https://github.com/pufereq/template-repo/commit/9778c74ebfef386f4c6b2bb1cb9792f9290ccd9c) init uv
 
 ### Miscellaneous Tasks
