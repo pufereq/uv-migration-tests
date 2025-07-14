@@ -64,7 +64,7 @@ jobs:
       - name: 📊 generate coverage report
         if: always()
         run: |
-          pdm run coverage json
+          uv run coverage json
           cov_percent=$(jq '.totals.percent_covered' coverage.json)
           cov_percent_rounded=$(python3 -c "print(round(${cov_percent}, 2))")
           cov_lines=$(jq '.totals.covered_lines' coverage.json)
