@@ -25,6 +25,12 @@ jobs:
         with:
           python-version-file: "pyproject.toml"
 
+      - name: 📦 sync depedencies
+        run: |
+          uv sync
+          uv sync --group test
+
+
       - name: configure git
         run: |
           git config --global user.name "github-actions[bot]"
