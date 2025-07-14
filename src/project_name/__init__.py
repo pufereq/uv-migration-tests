@@ -7,3 +7,7 @@ def hello() -> str:
 
 def goodbye() -> str:
     return "Goodbye from uv-migration-tests!"
+
+
+def farewell() -> str:
+    return "Farewell from uv-migration-tests!"
