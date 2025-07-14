@@ -275,6 +275,37 @@ wheels = [
 ]
 
 [[package]]
+name = "project-name"
+version = "0.1.0"
+source = { editable = "." }
+
+[package.dev-dependencies]
+bump = [
+    { name = "git-cliff" },
+    { name = "python-semantic-release" },
+]
+test = [
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "pytest-github-actions-annotate-failures" },
+    { name = "pytest-mock" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+bump = [
+    { name = "git-cliff", specifier = ">=2.9.1" },
+    { name = "python-semantic-release", specifier = ">=10.2.0" },
+]
+test = [
+    { name = "pytest", specifier = ">=4.2.1" },
+    { name = "pytest-cov", specifier = ">=6.2.1" },
+    { name = "pytest-github-actions-annotate-failures", specifier = ">=0.3.0" },
+    { name = "pytest-mock", specifier = ">=3.14.1" },
+]
+
+[[package]]
 name = "pydantic"
 version = "2.11.7"
 source = { registry = "https://pypi.org/simple" }
@@ -512,37 +543,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/15/22/9ee70a2574a4f4599c47dd506532914ce044817c7752a79b6a51286319bc/urllib3-2.5.0.tar.gz", hash = "sha256:3fc47733c7e419d4bc3f6b3dc2b4f890bb743906a30d56ba4a5bfa4bbff92760", size = 393185, upload-time = "2025-06-18T14:07:41.644Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl", hash = "sha256:e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc", size = 129795, upload-time = "2025-06-18T14:07:40.39Z" },
-]
-
-[[package]]
-name = "uv-migration-tests"
-version = "0.1.0"
-source = { editable = "." }
-
-[package.dev-dependencies]
-bump = [
-    { name = "git-cliff" },
-    { name = "python-semantic-release" },
-]
-test = [
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "pytest-github-actions-annotate-failures" },
-    { name = "pytest-mock" },
-]
-
-[package.metadata]
-
-[package.metadata.requires-dev]
-bump = [
-    { name = "git-cliff", specifier = ">=2.9.1" },
-    { name = "python-semantic-release", specifier = ">=10.2.0" },
-]
-test = [
-    { name = "pytest", specifier = ">=8.4.1" },
-    { name = "pytest-cov", specifier = ">=6.2.1" },
-    { name = "pytest-github-actions-annotate-failures", specifier = ">=0.3.0" },
-    { name = "pytest-mock", specifier = ">=3.14.1" },
 ]
 
 [[package]]
